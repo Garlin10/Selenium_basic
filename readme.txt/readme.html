@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Python Selenium Automation Script README</title>
+</head>
+<body>
+    <h1>Python Selenium Automation Script</h1>
+    <p>This Python script, created by Gyula Gál, uses Selenium to automate web browser interactions. It provides a set of functions to control a web browser, such as opening URLs, clicking buttons, and entering text into fields.</p>
+
+    <h2>Features</h2>
+    <ul>
+        <li><strong>Automatic ChromeDriver Installation</strong>: Automatically installs the ChromeDriver required for Selenium.</li>
+        <li><strong>Open a URL</strong>: Navigate to a specified URL.</li>
+        <li><strong>Element Visibility Check</strong>: Check if a certain element is visible on the page.</li>
+        <li><strong>Wait for Element Visibility</strong>: Wait until a specific element becomes visible.</li>
+        <li><strong>Click Button</strong>: Click a button on the page.</li>
+        <li><strong>Write Text in Field</strong>: Enter text into a text field.</li>
+        <li><strong>Get Current URL</strong>: Retrieve the current URL of the browser.</li>
+    </ul>
+
+    <h2>Requirements</h2>
+    <ul>
+        <li>Python 3.x</li>
+        <li>Selenium</li>
+        <li>chromedriver_autoinstaller</li>
+    </ul>
+
+    <h2>Installation</h2>
+    <p>Before running the script, make sure you have Python installed on your system. You can download and install Python from <a href="https://www.python.org/downloads/">python.org</a>.</p>
+    <p>To install the required Python packages, use the following command in your terminal:</p>
+    <pre><code>pip install -r "requirements.txt"</code></pre>
+    <p>This will install all the dependencies listed in the 'requirements.txt' file.</p>
+
+    <h2>Usage</h2>
+    <ol>
+        <li><strong>Start the Browser</strong>: Call <code>start_browser()</code> to start a new Selenium WebDriver instance.</li>
+        <li><strong>Open a URL</strong>: Use <code>open_url(driver, url)</code> to navigate to the desired webpage.</li>
+        <li><strong>Interact with the Webpage</strong>: Use functions like <code>click_button</code>, <code>write_text_in_field</code>, and <code>is_element_visible</code> to interact with web elements.</li>
+    </ol>
+    <h3>Example</h3>
+    <pre><code>
+driver = start_browser()
+open_url(driver, "https://www.example.com")
+click_button(driver, '/html/body/div/p[2]/a', By.XPATH)
+# ... other actions ...
+driver.quit()
+    </code></pre>
+    <p>Replace 'https://www.example.com' with the URL you want to open and '/html/body/div/p[2]/a' with the XPath or JS path of the element you want to interact with.</p>
+
+    <h2>Important Notes</h2>
+    <ul>
+        <li>This script is meant for educational purposes and should be used in accordance with website terms of service and legal restrictions.</li>
+        <li>Ensure that web scraping or automation does not violate the terms of service of the website.</li>
+    </ul>
+
+    <h2>License</h2>
+    <p>This project is open-sourced and free to use. Kindly ensure to use it for ethical and legal purposes only.</p>
+</body>
+</html>
